@@ -7,10 +7,9 @@ let image = document.getElementById("image");
 let instruction = document.getElementById("instruction")
 btn.addEventListener("click", () => {
     let poids = document.getElementById("poids").value;
-        console.log(poids);
     let taille = document.getElementById("taille").value;
     
-    if(poids !== "" || taille !== ""){
+    if(poids !== "" && taille !== ""){
         instruction.remove();
         let imc = poids / (taille ** 2);
         imc = Math.round(imc*100)/100;
