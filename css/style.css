@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(-45deg, #0F2027, #033a52, #46bbe9, #0F2027);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    height: 100vh;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1{
+    color:black;
+}
+input{
+    height:40px;
+    text-align: center;
+}
+.image{
+    visibility: hidden;
+    margin-top: 50px;
+   
+}
+.input{
+   margin-right: 20px;
+
+}
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white ;
+    width: 600px;
+    height: 700px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 4px black;
+   
+    
+}
+.content{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+/* ------EFFET BOUTON------ */
+.container wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    cursor: pointer;
+    background-color: white;
+    
+  }
+  
+  button span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  button:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: all .35s;
+  }
+  
+  button:hover{
+    color: #fff;
+  }
+  
+  button:hover:after{
+    width: 100%;
+  }
